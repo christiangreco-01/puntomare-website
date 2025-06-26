@@ -1261,7 +1261,7 @@ strong {
 
 .footer-links a:hover,
 .footer-contact a:hover {
-  color: #ff7e1b; /* custom secondary color */
+  color: var(--link-hover-color); /* custom secondary color */
 }
 
 /* Icons */
@@ -1275,7 +1275,7 @@ strong {
   width: 20px;
   height: 20px;
   margin-right: 0.5rem;
-  color: #ff7e1b; /* secondary */
+  color: var(--link-hover-color); /* secondary */
 }
 
 /* Social media */
@@ -1299,7 +1299,7 @@ strong {
 }
 
 .social-icons a:hover svg {
-  fill: #ff7e1b;
+  fill: var(--link-hover-color);
 }
 
 /* Footer bottom */

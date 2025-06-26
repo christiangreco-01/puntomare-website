@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PuntoMare - Piani di Abbonamento</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../images/favicon.png"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#084e84",
+              secondary: "#f6c932",
+              cluster: "#2596be",
+              bgList: "#e1f2f9",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #f0f9ff;
+      }
+
+      .wave-bg {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23084e84' fill-opacity='0.1' d='M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+      }
+
+      .plan-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .plan-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 25px -5px rgba(8, 78, 132, 0.2),
+          0 10px 10px -5px rgba(8, 78, 132, 0.1);
+      }
+
+      .feature-check {
+        color: #084e84;
+      }
+    </style>
+  </head>
+  <body class="h-dvh flex flex-col">
+    <header class="bg-primary text-white py-6">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <div class="flex items-center">
+          <img
+            src="../images/logo.svg"
+            alt="Logo PuntoMare"
+            class="w-100 h-100 mr-3"
+          />
+        </div>
+        <nav>
+          <ul class="flex space-x-6">
+            <!-- <li><a href="#" class="hover:text-secondary transition">Home</a></li>
+                      <li><a href="#" class="hover:text-secondary transition">Servizi</a></li>
+                      <li><a href="#" class="font-bold text-secondary">Abbonamenti</a></li>
+                      <li><a href="#" class="hover:text-secondary transition">Contatti</a></li> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="py-16 bg-primary text-white wave-bg flex-1">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-4xl font-bold mb-4">
+          Grazie per aver scelto PuntoMare!
+        </h2>
+        <p class="text-xl max-w-2xl mx-auto mb-2">
+          Sul tuo estratto conto verrà visualizzato un pagamanto a PuntoMare
+          Business
+        </p>
+        <div class="relative inline-block text-left">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSceD_nAI8H75AI8wRuDxJYuObedjWOHCKtNsZa1JIvq3HsWdw/viewform?usp=header"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-secondary font-semibold rounded px-3 py-2 text-primary mt-2 inline-block"
+          >
+            Compila il form con le informazioni della tua attività
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 justify-between gap-8">
+          <div>
+            <div class="flex items-center mb-4">
+              <img
+                src="../images/logo.svg"
+                alt="Logo PuntoMare"
+                class="w-50 h-50 mr-3"
+              />
+            </div>
+            <p class="text-gray-400">
+              L’app che rivoluziona il modo di vivere le vacanze al mare
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">Link Utili</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="https://www.punto-mare.it/"
+                  class="text-gray-400 hover:text-secondary transition"
+                  >Home</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-4">Contattaci</h4>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <svg
+                  class="w-5 h-5 mr-2 text-secondary"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                  ></path>
+                  <path
+                    d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                  ></path>
+                </svg>
+                <a
+                  href="mailto:info@punto-mare.it"
+                  class="text-gray-400 hover:text-secondary transition"
+                  >info@punto-mare.it</a
+                >
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="w-5 h-5 mr-2 text-secondary"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                  ></path>
+                </svg>
+                <a
+                  href="tel:+393203454269"
+                  class="text-gray-400 hover:text-secondary transition"
+                  >+39 3203454269</a
+                >
+              </li>
+            </ul>
+            <div class="mt-4">
+              <h5 class="text-sm font-bold mb-2">Seguici</h5>
+              <div class="flex space-x-4">
+                <a
+                  href="https://www.instagram.com/puntomare.app/"
+                  class="text-gray-400 hover:text-secondary transition"
+                >
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100094087636213"
+                  class="text-gray-400 hover:text-secondary transition"
+                >
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/puntomare/posts/?feedView=all"
+                  class="text-gray-400 hover:text-secondary transition"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-linkedin"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400"
+        >
+          <p>&copy; 2024 MNSIMU S.R.L.S. - P.IVA 05283090750</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

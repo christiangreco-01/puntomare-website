@@ -1,0 +1,205 @@
+{
+  "activities": [
+    {
+      "name": "stabilimento balneare",
+      "packages": [
+        {
+          "packageName": "Mensile",
+          "packageId": "lido-m",
+          "packageDescription": "lido-mensile",
+          "packageOriginalPrice": 2500,
+          "packagePrice": 1990,
+          "packagePeriod": "mese",
+          "packagePaymentLink": "https://buy.stripe.com/5kQ5kE1r3cRveeX55z3cc0a"
+        },
+        {
+          "packageName": "Annuale",
+          "packageId": "lido-a",
+          "packageDescription": "lido-annuale",
+          "packageOriginalPrice": 25000,
+          "packagePrice": 9990,
+          "packagePeriod": "anno",
+          "packagePaymentLink": "https://buy.stripe.com/9B6aEY6Ln04JdaT69D3cc0b"
+        }
+      ],
+      "features": [
+        "&#8702; <strong>Card personalizzata dell’attività</strong> in app con foto, descrizione, contatti e tutte le informazioni utili per gli utenti.",
+        "&#8702; <strong>Tasto di prenotazione diretta</strong>: i clienti possono contattare l’attività tramite chiamata o messaggio, senza intermediazioni né commissioni.",
+        "&#8702; <strong>Visibilità intelligente tramite il nostro assistente AI</strong>: l’attività viene suggerita automaticamente agli utenti in base alle loro esigenze e preferenze."
+      ],
+      "notIncluded": [
+        "La prenotazione diretta di ombrelloni e lettini tramite app (servizio riservato solo ad alcune partnership)."
+      ]
+    },
+    {
+      "name": "ristorante",
+      "packages": [
+        {
+          "packageName": "Mensile",
+          "packageId": "ristoro-m",
+          "packageDescription": "ristoro-mensile",
+          "packageOriginalPrice": 2500,
+          "packagePrice": 1990,
+          "packagePeriod": "mese",
+          "packagePaymentLink": "https://buy.stripe.com/00wfZic5H6t75Ir7dH3cc06"
+        },
+        {
+          "packageName": "Annuale",
+          "packageId": "ristoro-a",
+          "packageDescription": "ristoro-annuale",
+          "packageOriginalPrice": 25000,
+          "packagePrice": 9990,
+          "packagePeriod": "anno",
+          "packagePaymentLink": "https://buy.stripe.com/14A00k3zbaJn1sbapT3cc07"
+        }
+      ],
+      "features": [
+        "&#8702; <strong>Card personalizzata dell’attività</strong> in app con foto, descrizione, contatti e tutte le informazioni utili per gli utenti.",
+        "&#8702; <strong>Tasto di prenotazione diretta</strong>: i clienti possono contattare l’attività tramite chiamata o messaggio, senza intermediazioni né commissioni.",
+        "&#8702; <strong>Visibilità intelligente tramite il nostro assistente AI</strong>: l’attività viene suggerita automaticamente agli utenti in base alle loro esigenze e preferenze."
+      ],
+      "notIncluded": [
+        "Prenotazioni gestite direttamente da app (es. pagamento online o prenotazione automatica)"
+      ]
+    },
+    {
+      "name": "noleggio",
+      "packages": [
+        {
+          "packageName": "Mensile",
+          "packageId": "noleggi-m",
+          "packageDescription": "noleggi-mensile",
+          "packageOriginalPrice": 2500,
+          "packagePrice": 1990,
+          "packagePeriod": "mese",
+          "packagePaymentLink": "https://buy.stripe.com/cNi4gAglXg3HdaT0Pj3cc02"
+        },
+        {
+          "packageName": "Annuale",
+          "packageId": "noleggi-a",
+          "packageDescription": "noleggi-annuale",
+          "packageOriginalPrice": 25000,
+          "packagePrice": 9990,
+          "packagePeriod": "anno",
+          "packagePaymentLink": "https://buy.stripe.com/aFa6oId9L7xb4En0Pj3cc03"
+        }
+      ],
+      "features": [
+        "&#8702; <strong>Card personalizzata dell’attività</strong> in app con foto, descrizione, contatti e tutte le informazioni utili per gli utenti.",
+        "&#8702; <strong>Tasto di prenotazione diretta</strong>: i clienti possono contattare l’attività tramite chiamata o messaggio, senza intermediazioni né commissioni.",
+        "&#8702; <strong>Visibilità intelligente tramite il nostro assistente AI</strong>: l’attività viene suggerita automaticamente agli utenti in base alle loro esigenze e preferenze."
+      ],
+      "notIncluded": [
+        "Prenotazioni gestite direttamente da app (es. pagamento online o prenotazione automatica)"
+      ]
+    },
+    {
+      "name": "esperienza",
+      "packages": [
+        {
+          "packageName": "Mensile",
+          "packageId": "esperienza-m",
+          "packageDescription": "esperienza-mensile",
+          "packageOriginalPrice": 2500,
+          "packagePrice": 1990,
+          "packagePeriod": "mese",
+          "packagePaymentLink": "https://buy.stripe.com/3cI3cw1r35p39YHapT3cc04"
+        },
+        {
+          "packageName": "Annuale",
+          "packageId": "esperienza-a",
+          "packageDescription": "esperienza-annuale",
+          "packageOriginalPrice": 25000,
+          "packagePrice": 9990,
+          "packagePeriod": "anno",
+          "packagePaymentLink": "https://buy.stripe.com/fZudRa6Ln5p35Ir1Tn3cc05"
+        }
+      ],
+      "features": [
+        "&#8702; <strong>Card personalizzata dell’attività</strong> in app con foto, descrizione, contatti e tutte le informazioni utili per gli utenti.",
+        "&#8702; <strong>Tasto di prenotazione diretta</strong>: i clienti possono contattare l’attività tramite chiamata o messaggio, senza intermediazioni né commissioni.",
+        "&#8702; <strong>Visibilità intelligente tramite il nostro assistente AI</strong>: l’attività viene suggerita automaticamente agli utenti in base alle loro esigenze e preferenze."
+      ],
+      "notIncluded": [
+        "Prenotazioni gestite direttamente da app (es. pagamento online o prenotazione automatica)"
+      ]
+    },
+    {
+      "name": "pacchetti pubblicitari",
+      "packages": [
+        {
+          "packageName": "Copertura Locale - Solo 1 regione",
+          "packageId": "altro-1r-1m",
+          "packageDescription": "altro-regione",
+          "packageCost": [
+            {
+              "period": "1 mese",
+              "price": 2900
+            },
+            {
+              "period": "3 mesi",
+              "price": 7900
+            },
+            {
+              "period": "6 mesi",
+              "price": 14900
+            },
+            {
+              "period": "1 anno",
+              "price": 27900
+            }
+          ]
+        },
+        {
+          "packageName": "Copertura Multi-Regione - fino a 4 regioni",
+          "packageId": "altro-4r-1m",
+          "packageDescription": "altro-4regioni",
+          "packageCost": [
+            {
+              "period": "1 mese",
+              "price": 6900
+            },
+            {
+              "period": "3 mesi",
+              "price": 17900
+            },
+            {
+              "period": "6 mesi",
+              "price": 33900
+            },
+            {
+              "period": "1 anno",
+              "price": 63900
+            }
+          ]
+        },
+        {
+          "packageName": "Copertura Nazionale - Tutta Italia",
+          "packageId": "altro-IT-1m",
+          "packageDescription": "altro-italia-1mese",
+          "packageCost": [
+            {
+              "period": "1 mese",
+              "price": 14900
+            },
+            {
+              "period": "3 mesi",
+              "price": 37900
+            },
+            {
+              "period": "6 mesi",
+              "price": 66900
+            },
+            {
+              "period": "1 anno",
+              "price": 129900
+            }
+          ]
+        }
+      ],
+      "features": [
+        "Banner in app cliccabile (il click rimanda a ciò che ci indica il cliente: es. sito di prenotazione/ airb&b etc)"
+      ]
+    }
+  ]
+}

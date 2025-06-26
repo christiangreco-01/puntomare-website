@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <title>Home</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="home.js" defer></script> <!-- Includi home.js -->  
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../images/favicon.png"
+    />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/templatemo-tiya-golf-club.css" rel="stylesheet" />
+    <style>
+      /* Global Styles */
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        margin: 0;
+        align-items: center;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+      /* Page Header */
+      h1 {
+        font-size: 2rem;
+        color: #2c3e50;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      /* Textarea Styling */
+      textarea {
+        font-size: 1rem;
+        padding: 15px;
+        max-width: 90%;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        resize: none;
+        margin-bottom: 20px;
+      }
+
+      textarea:focus {
+        outline: none;
+        border-color: #3498db;
+        box-shadow: 0 0 5px rgba(52, 152, 219, 0.7);
+      }
+
+      /* Buttons */
+      button {
+        padding: 12px 20px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin: 5px;
+      }
+      .doc-item {
+        display: flex;
+        align-items: center;
+      }
+      #save-button {
+        background-color: #27ae60;
+        color: white;
+      }
+
+      #save-button:hover {
+        background-color: #2ecc71;
+      }
+
+      #logout-button {
+        background-color: #e74c3c;
+        color: white;
+      }
+
+      #logout-button:hover {
+        background-color: #a20a00;
+      }
+
+      /* Centering the Buttons */
+      button:focus {
+        outline: none;
+      }
+      .delete-button {
+        background-color: #e73e2e;
+        color: white;
+      }
+
+      .save-button {
+        background-color: #1ab70f;
+        color: white;
+      }
+
+      .add-doc-button {
+        background-color: #286aa5;
+        color: white;
+        align-self: flex-start;
+      }
+      /* Additional Responsiveness */
+      @media screen and (max-width: 768px) {
+        textarea {
+          width: 95%;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        button {
+          width: 100%;
+          font-size: 1.1rem;
+        }
+        .doc-item {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+        }
+        .add-doc-button {
+          margin-top: 20px;
+        }
+        #logout-button {
+          max-width: 20%;
+          padding: 5px;
+        }
+        .button-group {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header
+      style="width: 100%; background-color: #286aa5; padding: 15px 0 15px 10px"
+    >
+      <nav>
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center"
+            href="../index.html"
+          >
+            <img
+              src="../images/logo.svg"
+              class="navbar-brand-image img-fluid"
+              alt="PuntoMare"
+            />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <div id="loading">Caricamento...</div>
+    <div id="content" style="display: none">
+      <div style="padding: 30px">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+          "
+        >
+          <h1 style="text-align: left">
+            Sezione di caricamento contenuti -
+            <span id="marina-name"></span>
+          </h1>
+          <button id="logout-button">Logout</button>
+        </div>
+        <button class="add-doc-button" id="add-reparto">
+          + Aggiungi sezione
+        </button>
+
+        <div style="display: flex; flex-direction: column; width: 100%">
+          <div id="docs-container">
+            <p>Caricamento documenti in corso...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

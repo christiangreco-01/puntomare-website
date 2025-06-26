@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../images/favicon.png"
+    />
+  </head>
+  <body>
+    <div class="contact_us_2">
+      <div class="responsive-container-block big-container">
+        <div class="blueBG">
+          <img src="../images/logo.svg" class="imgxx" />
+        </div>
+        <div class="responsive-container-block container">
+          <!-- Cambiato il file di destinazione in invia_email_business.php -->
+          <form class="form-box" id="contactForm">
+            <div class="container-block form-wrapper">
+              <p class="text-blk contactus-head">PuntoMare Business</p>
+              <p class="text-blk contactus-subhead">
+                Hai un'attività e vuoi sponsorizzarla? Compila i campi e inviaci
+                la richiesta. Troveremo la soluzione adatta alle tue esigenze.
+              </p>
+              <div class="responsive-container-block">
+                <div
+                  class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6"
+                >
+                  <p class="text-blk input-title">Nome</p>
+                  <input class="input" name="FirstName" placeholder="Mario" />
+                </div>
+                <div
+                  class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12"
+                >
+                  <p class="text-blk input-title">Cognome</p>
+                  <input class="input" name="LastName" placeholder="Rossi" />
+                </div>
+                <div
+                  class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12"
+                >
+                  <p class="text-blk input-title">Email</p>
+                  <input
+                    class="input"
+                    name="Email"
+                    placeholder="Email"
+                    type="email"
+                    required
+                  />
+                </div>
+                <div
+                  class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12"
+                >
+                  <p class="text-blk input-title">Nome attività</p>
+                  <input
+                    class="input"
+                    name="Attivita"
+                    placeholder="Nome della tua attività"
+                  />
+                </div>
+                <div
+                  class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12"
+                >
+                  <p class="text-blk input-title">Per cosa ci contatti?</p>
+                  <textarea
+                    class="textinput"
+                    name="Message"
+                    placeholder="Scrivi il motivo per cui ci contatti"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <button class="submit-btn" type="submit">Invia</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const form = e.target;
+          const formData = new FormData(form);
+
+          fetch("invia_email_business.php", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => response.text())
+            .then((text) => {
+              alert(text);
+              form.reset();
+            })
+            .catch((error) => {
+              console.error("Errore durante l'invio:", error);
+              alert("Errore imprevisto durante l'invio. Riprova.");
+            });
+        });
+    </script>
+  </body>
+</html>

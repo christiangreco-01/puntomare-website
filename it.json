@@ -16,7 +16,7 @@
     "contact_us":"Contattaci",
     "mail":"info@punto-mare.it",
     "phone_number":"+39 3203454269",
-    "follow_us":"Seguici",
+    "follow_us":"Seguici"
   },
   "index": {
     "title": "PuntoMare - Il mare a portata di click!",
@@ -27,16 +27,16 @@
     "ristoranti": "Ristoranti esclusivi",
     "esperienze": "Le esperienze in zona",
     "noleggi": "Tutti i noleggi",
-    "guida": "Una guida locale",
+    "guida_locale": "Una guida locale",
     "slogan": "a portata di click!",
     "intro": "Cosa troverai in app",
     "prev2": "Previsioni marine",
     "istruzioni": "Inserisci la tua destinazione e scopri in base ai colori le condizioni marine di ogni spiaggia lungo la costa.",
     "servizi": "Esperienze, ristoranti e lidi attrezzati",
     "scopri": "Scopri e prenota senza commissioni esperienze uniche, ristoranti esclusivi e lidi attrezzati.",
-    "guida": "Guida turistica",
+    "guida_turistica": "Guida turistica",
     "chiedi": "Chiedi, scopri e vivi. Punto fornisce suggerimenti personalizzati sulla base dei tuoi interessi e preferenze.",
-    "download": "Scarica l'app",
+    "download": "Scarica l'app"
   },
   "chisiamo": {
     "title": "Chi Siamo",
@@ -60,7 +60,7 @@
     "team_member4_description": "Breve descrizione o motto personale.",
     "team_member5_name": "Marco Greco",
     "team_member5_role": "CEO / data engineer",
-    "team_member5_description": "Breve descrizione o motto personale.",
+    "team_member5_description": "Breve descrizione o motto personale."
   },
   "contatti": {
     "title": "PuntoMare - Il mare a portata di click!",
@@ -86,11 +86,11 @@
     "chatbot": "Come funziona il chatbot?",
     "chatbot_risp": "Il chatbot, grazie all’utilizzo dell’intelligenza artificiale, è in grado di rispondere a qualsiasi domanda e di fornire suggerimenti sulla base dei tuoi interessi e preferenze.",
     "pubblicita": "Come posso pubblicizzare la mia attività su PuntoMare?",
-    "pubblicita_risp": "Puoi contattarci tramite la sezione <a href="#section_5">Contattaci</a> per discutere le opportunità di collaborazione e promozione della tua attività in app.",
+    "pubblicita_risp": "Puoi contattarci tramite la sezione <a href=\"/contatti.html\">Contattaci</a> per discutere le opportunità di collaborazione e promozione della tua attività in app.",
     "attivita": "Quali tipi di attività posso trovare in app?",
     "attivita_risp": " Oltre alle spiagge, puoi trovare e prenotare lidi attrezzati, esperienze, ristoranti e noleggi.",
     "segnalazione": "Come posso segnalare un problema o un errore nell'app?",
-    "segnalazione_risp": "Puoi segnalare problemi o errori tramite la sezione “Errori ed anomalie” e faremo del nostro meglio per risolverli il prima possibile.",
+    "segnalazione_risp": "Puoi segnalare problemi o errori tramite la sezione “Errori ed anomalie” e faremo del nostro meglio per risolverli il prima possibile."
   }
 }
 

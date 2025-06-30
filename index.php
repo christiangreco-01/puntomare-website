@@ -51,7 +51,7 @@
                                     <b><?= $page_translations['ristoranti'] ?></b>
                                     <b><?= $page_translations['esperienze'] ?></b>
                                     <b><?= $page_translations['noleggi'] ?></b>
-                                    <b><?= $page_translations['guida'] ?></b>
+                                    <b><?= $page_translations['guida_locale'] ?></b>
                                 </span>
                                 <br>
                                 <span><?= $page_translations['slogan'] ?></span>
@@ -103,7 +103,7 @@
                         </p>
                     </div>
                     <div class="col-lg-4 col-12 mb-3 mb-lg-0 text-center">
-                        <h4 class="mb-4 pb-lg-2"><?= $page_translations['guida'] ?></h4>
+                        <h4 class="mb-4 pb-lg-2"><?= $page_translations['guida_turistica'] ?></h4>
                         <div class="table-responsive">
                             <img src="images/f3.svg" class="custom-block-image img-fluid">
                         </div>

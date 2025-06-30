@@ -12,7 +12,7 @@ if (!in_array($lang, $supported_langs)) {
 $page = basename($_SERVER['PHP_SELF'], '.php'); // ottieni il nome del file senza l'estensione
 
 // Carica il file JSON della lingua tramite URL
-$lang_url = "https://www.punto-mare.com/$lang.json";
+$lang_url = "https://www.punto-mare.it/nuovo_puntomare/$lang.json";
 
 // Usa file_get_contents per ottenere il contenuto JSON dal file remoto
 $response = file_get_contents($lang_url);

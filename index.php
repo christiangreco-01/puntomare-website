@@ -1,3 +1,5 @@
+<?php require('translator.php'); ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>PuntoMare - Il mare a portata di click!</title>
+    <title><?= $page_translations['title'] ?></title>
     <!-- CSS FILES -->
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,72 +36,25 @@
 </head>
 <body>
     <main>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <img src="images/logo.svg" class="navbar-brand-image img-fluid" alt="PuntoMare">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-lg-auto">
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll active" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="/chisiamo.html">Chi siamo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="/faqs.html">FAQs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./marinas/login.html">Enti affiliati</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="/contatti.html">Contatti</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Lingua</a>
-                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                <li>
-                                    <a class="dropdown-item active">
-                                        <img src="https://flagcdn.com/w40/it.png" alt="Italiano"
-                                            style="width: 20px; height: auto; margin-right: 8px;"> Italiano
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="./en/index.html">
-                                        <img src="https://flagcdn.com/w40/gb.png" alt="Inglese"
-                                            style="width: 20px; height: auto; margin-right: 8px;"> Inglese
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <?php require('navbar.php'); ?>
         <section class="hero-section d-flex justify-content-center align-items-center">
             <div class="section-overlay"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                        <h1 class="text-white mb-4">Benvenuto in PuntoMare</h2>
+                        <h1 class="text-white mb-4"><?= $page_translations['welcome'] ?></h2>
                             <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
                                 <span class="cd-words-wrapper">
-                                    <b class="is-visible">Previsioni marine</b>
-                                    <b>Tutte le spiagge</b>
-                                    <b>Lidi attrezzati</b>
-                                    <b>Ristoranti esclusivi</b>
-                                    <b>Le esperienze in zona</b>
-                                    <b>Tutti i noleggi</b>
-                                    <b>Una guida locale</b>
+                                    <b class="is-visible"><?= $page_translations['previsioni'] ?></b>
+                                    <b><?= $page_translations['spiagge'] ?></b>
+                                    <b><?= $page_translations['lidi'] ?></b>
+                                    <b><?= $page_translations['ristoranti'] ?></b>
+                                    <b><?= $page_translations['esperienze'] ?></b>
+                                    <b><?= $page_translations['noleggi'] ?></b>
+                                    <b><?= $page_translations['guida'] ?></b>
                                 </span>
                                 <br>
-                                <span>a portata di click!</span>
+                                <span><?= $page_translations['slogan'] ?></span>
                             </h1>
                             <div class="custom-btn-group">
                                 <a href="#download_section" class="btn custom-btn smoothscroll me-3">Scarica l'app</a>
@@ -128,32 +83,31 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-12 text-center mx-auto mb-lg-5 mb-4">
-                        <h2>Cosa troverai in app</h2>
+                        <h2><?= $page_translations['intro'] ?></h2>
                     </div>
                     <div class="col-lg-4 col-12 mb-3 mb-lg-0 text-center">
-                        <h4 class="mb-4 pb-lg-2">Previsioni marine</h4>
+                        <h4 class="mb-4 pb-lg-2"><?= $page_translations['prev2'] ?></h4>
                         <div class="table-responsive">
                             <img src="images/f1.svg" class="custom-block-image img-fluid">
                         </div>
-                        <p class="mb-0">Inserisci la tua destinazione e scopri in base ai colori le condizioni marine di ogni spiaggia lungo la costa.
+                        <p class="mb-0"><?= $page_translations['istruzioni'] ?>
                         </p>
                     </div>
                     <div class="col-lg-4 col-12 mb-3 mb-lg-0 text-center">
-                        <h4 class="mb-4 pb-lg-2">Esperienze, ristoranti e lidi attrezzati
+                        <h4 class="mb-4 pb-lg-2"><?= $page_translations['servizi'] ?>
                         </h4>
                         <div class="table-responsive">
                             <img src="images/f2.svg" class="custom-block-image img-fluid">
                         </div>
-                        <p class="mb-0">Scopri e prenota senza commissioni esperienze uniche, ristoranti esclusivi e lidi attrezzati. 
+                        <p class="mb-0"><?= $page_translations['scopri'] ?> 
                         </p>
                     </div>
                     <div class="col-lg-4 col-12 mb-3 mb-lg-0 text-center">
-                        <h4 class="mb-4 pb-lg-2">Guida turistica</h4>
+                        <h4 class="mb-4 pb-lg-2"><?= $page_translations['guida'] ?></h4>
                         <div class="table-responsive">
                             <img src="images/f3.svg" class="custom-block-image img-fluid">
                         </div>
-                        <p class="mb-0">Chiedi, scopri e vivi. Punto fornisce suggerimenti personalizzati sulla base dei
-                            tuoi interessi e preferenze.</p>
+                        <p class="mb-0"><?= $page_translations['chiedi'] ?></p>
                     </div>
                 </div>
             </div>
@@ -176,7 +130,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-12">
                         <div class="d-flex section-bg-image-block flex-column">
-                            <h2 class="mb-lg-3">Scarica l'app</h2>
+                            <h2 class="mb-lg-3"><?= $page_translations['download'] ?></h2>
                             <div class="d-flex flex-row">
                                 <div>
                                     <img src="images/qr.png" class="custom-block-image img-fluid qr align-self-center">
@@ -211,89 +165,7 @@
             </svg> -->
         </section>
     </main>
-    <footer class="footer">
-        <div class="footer-container">
-          <div class="footer-grid">
-            <div class="footer-logo-section">
-              <div class="footer-logo">
-                <img src="../images/logo.svg" alt="Logo PuntoMare" />
-              </div>
-              <p class="footer-description">
-                L’app che rivoluziona il modo di vivere le vacanze al mare
-              </p>
-            </div>
-      
-            <div class="footer-links">
-              <h4>Link Utili</h4>
-              <ul>
-                <li>
-                  <a href="https://www.punto-mare.it/">Home</a>
-                </li>
-              </ul>
-            </div>
-      
-            <div class="footer-contact">
-              <h4>Contattaci</h4>
-              <ul>
-                <li class="footer-contact-item">
-                  <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                  </svg>
-                  <a href="mailto:info@punto-mare.it">info@punto-mare.it</a>
-                </li>
-                <li class="footer-contact-item">
-                  <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
-                    <path
-                      d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
-                    ></path>
-                  </svg>
-                  <a href="tel:+393203454269">+39 3203454269</a>
-                </li>
-              </ul>
-      
-              <div class="footer-social">
-                <h5>Seguici</h5>
-                <div class="social-icons">
-                  <a href="https://www.instagram.com/puntomare.app/" aria-label="Instagram">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                          d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-                        ></path>
-                      </svg>
-                  </a>
-                  <a href="https://www.facebook.com/profile.php?id=100094087636213" aria-label="Facebook">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                          d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
-                        ></path>
-                      </svg>
-                  </a>
-                  <a href="https://www.linkedin.com/company/puntomare/posts/?feedView=all" aria-label="LinkedIn">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="25"
-                      height="25"
-                      fill="currentColor"
-                      class="bi bi-linkedin"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-      
-          <div class="footer-bottom">
-            <p>&copy; 2024 MNSIMU S.R.L.S. - P.IVA 05283090750</p>
-          </div>
-        </div>
-      </footer>
-      
+    <?php require('footer.php'); ?>
     <!-- JAVASCRIPT FILES -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>

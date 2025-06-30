@@ -1,3 +1,5 @@
+<?php require('translator.php'); ?>
+
 <header>
     <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -11,36 +13,36 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-lg-auto">
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="/">Home</a>
+                        <a class="nav-link click-scroll" href="/"><?= $page_translations['home'] ?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link click-scroll active" href="#">Chi siamo</a>
+                        <a class="nav-link click-scroll active" href="#"><?= $page_translations['chi_siamo'] ?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="/faqs.html">FAQs</a>
+                        <a class="nav-link click-scroll" href="/faqs.html"><?= $page_translations['FAQs'] ?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./marinas/login.html">Enti affiliati</a>
+                        <a class="nav-link" href="./marinas/login.html"><?= $page_translations['enti_affiliati'] ?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="/contatti.html">Contatti</a>
+                        <a class="nav-link click-scroll" href="/contatti.html"><?= $page_translations['contatti'] ?></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Lingua</a>
+                            data-bs-toggle="dropdown" aria-expanded="false"><?= $page_translations['language'] ?></a>
                         <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
                             <li>
                                 <a class="dropdown-item active" href="javascript:setLang('it')">
                                     <img src="https://flagcdn.com/w40/it.png" alt="Italiano"
                                         style="width: 20px; height: auto; margin-right: 8px" />
-                                    Italiano
+                                        <?= $page_translations['Italian'] ?>
                                 </a>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="javascript:setLang('en')">
                                     <img src="https://flagcdn.com/w40/gb.png" alt="Inglese"
                                         style="width: 20px; height: auto; margin-right: 8px" />
-                                    Inglese
+                                        <?= $page_translations['English'] ?>
                                 </a>
                             </li>
                         </ul>

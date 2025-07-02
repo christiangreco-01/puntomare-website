@@ -109,7 +109,7 @@
 
                                 <!-- Colonna immagine (destra su desktop) -->
                                 <div class="col-lg-6 order-lg-2 order-1 mb-4 mb-lg-0">
-                                    <img src="images/spiagge-bianche.JPG" alt="team" class="img-fluid rounded-4 shadow-lg" />
+                                    <img src="images/team.JPG" alt="team" class="img-fluid rounded-4 shadow-lg" />
                                 </div>
 
                             </div>
@@ -140,7 +140,7 @@
 
             <div class="col-md-4 col-sm-6 mb-4">
                 <div class="card shadow-sm border-0 h-100">
-                    <img src="images/team.jpg" class="card-img-top rounded-top" alt="Nome Cognome">
+                    <img src="images/team.JPG" class="card-img-top rounded-top" alt="Nome Cognome">
                     <div class="card-body">
                         <h5 class="card-title fw-bold"><?= $page_translations['team_member2_name'] ?></h5>
                         <p class="card-text text-muted"><?= $page_translations['team_member2_role'] ?></p>
@@ -152,7 +152,7 @@
 
             <div class="col-md-4 col-sm-6 mb-4">
                 <div class="card shadow-sm border-0 h-100">
-                    <img src="images/team.jpg" class="card-img-top rounded-top" alt="Nome Cognome">
+                    <img src="images/team.JPG" class="card-img-top rounded-top" alt="Nome Cognome">
                     <div class="card-body">
                         <h5 class="card-title fw-bold"><?= $page_translations['team_member3_name'] ?></h5>
                         <p class="card-text text-muted"><?= $page_translations['team_member3_role'] ?></p>
@@ -162,7 +162,7 @@
             </div>
             <div class="col-md-4 col-sm-6 mb-4">
                 <div class="card shadow-sm border-0 h-100">
-                    <img src="images/team.jpg" class="card-img-top rounded-top" alt="Nome Cognome">
+                    <img src="images/team.JPG" class="card-img-top rounded-top" alt="Nome Cognome">
                     <div class="card-body">
                         <h5 class="card-title fw-bold"><?= $page_translations['team_member4_name'] ?></h5>
                         <p class="card-text text-muted"><?= $page_translations['team_member4_role'] ?></p>
@@ -172,7 +172,7 @@
             </div>
             <div class="col-md-4 col-sm-6 mb-4">
                 <div class="card shadow-sm border-0 h-100">
-                    <img src="images/team.jpg" class="card-img-top rounded-top" alt="Nome Cognome">
+                    <img src="images/team.JPG" class="card-img-top rounded-top" alt="Nome Cognome">
                     <div class="card-body">
                         <h5 class="card-title fw-bold"><?= $page_translations['team_member5_name'] ?></h5>
                         <p class="card-text text-muted"><?= $page_translations['team_member5_role'] ?></p>

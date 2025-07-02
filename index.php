@@ -1,4 +1,4 @@
-<?php require('translator.php'); ?>
+<?php require_once('translator.php'); ?>
 
 <!doctype html>
 <html lang="en">
@@ -36,7 +36,7 @@
 </head>
 <body>
     <main>
-    <?php require('navbar.php'); ?>
+    <?php require_once('navbar.php'); ?>
         <section class="hero-section d-flex justify-content-center align-items-center">
             <div class="section-overlay"></div>
             <div class="container">

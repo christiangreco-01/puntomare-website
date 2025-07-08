@@ -11,37 +11,35 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-lg-auto">
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="/index.php"><?= $translations['navbar']['home'] ?></a>
+                        <a class="nav-link click-scroll <?= $page === 'index' ? 'active' : '' ?>" href="/index.php"><?= $translations['navbar']['home'] ?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link click-scroll active" href="#"><?= $translations['navbar']['chi_siamo'] ?></a>
+                        <a class="nav-link click-scroll <?= $page === 'chisiamo' ? 'active' : '' ?>" href="#"><?= $translations['navbar']['chi_siamo'] ?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="/faqs.php"><?= $translations['navbar']['FAQs'] ?></a>
+                        <a class="nav-link click-scroll <?= $page === 'faqs' ? 'active' : '' ?>" ><?= $translations['navbar']['FAQs'] ?></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./marinas/login.html"><?= $translations['navbar']['enti_affiliati'] ?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link click-scroll" href="/contatti.php"><?= $translations['navbar']['contatti'] ?></a>
+                        <a class="nav-link <?= $page === 'contatti' ? 'active' : '' ?>"><?= $translations['navbar']['contatti'] ?></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false"><?= $translations['navbar']['language'] ?></a>
                         <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
                             <li>
-                                <a class="dropdown-item active" href="javascript:setLang('it')">
-                                    <img src="https://flagcdn.com/w40/it.png" alt="Italiano"
-                                        style="width: 20px; height: auto; margin-right: 8px" />
-                                        <?= $translations['navbar']['Italian'] ?>
-                                </a>
+                            <a class="dropdown-item <?= $current_lang === 'it' ? 'active' : '' ?>" href="javascript:setLang('it')">
+                                <img src="https://flagcdn.com/w40/it.png" alt="Italiano" style="width: 20px; height: auto; margin-right: 8px" />
+                                <?= $translations['navbar']['Italian'] ?>
+                            </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="javascript:setLang('en')">
-                                    <img src="https://flagcdn.com/w40/gb.png" alt="Inglese"
-                                        style="width: 20px; height: auto; margin-right: 8px" />
-                                        <?= $translations['navbar']['English'] ?>
-                                </a>
+                            <a class="dropdown-item <?= $current_lang === 'en' ? 'active' : '' ?>" href="javascript:setLang('en')">
+                                <img src="https://flagcdn.com/w40/gb.png" alt="Inglese" style="width: 20px; height: auto; margin-right: 8px" />
+                                <?= $translations['navbar']['English'] ?>
+                            </a>
                             </li>
                         </ul>
                     </li>

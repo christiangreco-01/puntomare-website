@@ -129,7 +129,7 @@
             <h3 class="mb-4 fw-bold" style="color: #084e84;"><?= $page_translations['title_team_part'] ?></h3>
             <div class="col-md-4 col-sm-6 mb-4">
                 <div class="card shadow-sm border-0 h-100">
-                    <img src="images/team.jpg" class="card-img-top rounded-top" alt="Nome Cognome">
+                    <img src="images/team.JPG" class="card-img-top rounded-top" alt="Nome Cognome">
                     <div class="card-body">
                         <h5 class="card-title fw-bold"><?= $page_translations['team_member1_name'] ?></h5>
                         <p class="card-text text-muted"><?= $page_translations['team_member1_role'] ?></p>
@@ -160,13 +160,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 mb-4">
+            <!-- <div class="col-md-4 col-sm-6 mb-4">
                 <div class="card shadow-sm border-0 h-100">
                     <img src="images/team.JPG" class="card-img-top rounded-top" alt="Nome Cognome">
                     <div class="card-body">
-                        <h5 class="card-title fw-bold"><?= $page_translations['team_member4_name'] ?></h5>
-                        <p class="card-text text-muted"><?= $page_translations['team_member4_role'] ?></p>
-                        <p class="small text-secondary"><?= $page_translations['team_member4_description'] ?></p>
+                        <h5 class="card-title fw-bold"><-?= $page_translations['team_member4_name'] ?></h5>
+                        <p class="card-text text-muted"><-?= $page_translations['team_member4_role'] ?></p>
+                        <p class="small text-secondary"><-?= $page_translations['team_member4_description'] ?></p>
                     </div>
                 </div>
             </div>
@@ -174,12 +174,12 @@
                 <div class="card shadow-sm border-0 h-100">
                     <img src="images/team.JPG" class="card-img-top rounded-top" alt="Nome Cognome">
                     <div class="card-body">
-                        <h5 class="card-title fw-bold"><?= $page_translations['team_member5_name'] ?></h5>
-                        <p class="card-text text-muted"><?= $page_translations['team_member5_role'] ?></p>
-                        <p class="small text-secondary"><?= $page_translations['team_member5_description'] ?></p>
+                        <h5 class="card-title fw-bold"><-?= $page_translations['team_member5_name'] ?></h5>
+                        <p class="card-text text-muted"><-?= $page_translations['team_member5_role'] ?></p>
+                        <p class="small text-secondary"><-?= $page_translations['team_member5_description'] ?></p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 

@@ -24,6 +24,7 @@ if (file_exists($json_path)) {
 
 // Rendili globali
 $page_translations = $translations[$page] ?? [];
+$current_lang = $lang;
 
 // Recupera le traduzioni per la pagina corrente
 $page_translations = $translations[$page] ?? [
